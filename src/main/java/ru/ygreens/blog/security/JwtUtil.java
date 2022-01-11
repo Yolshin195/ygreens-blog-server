@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
 import ru.ygreens.blog.service.UserDetailsImpl;
 
 import javax.crypto.spec.SecretKeySpec;
@@ -14,6 +15,7 @@ import java.security.Key;
 import java.util.Base64;
 import java.util.Date;
 
+@Component
 public class JwtUtil {
     private static final Logger log = LoggerFactory.getLogger(JwtUtil.class);
 
